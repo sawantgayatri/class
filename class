@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Rectangle {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor to initialize length and width
+    Rectangle(double l, double w) : length(l), width(w) {}
+
+    // Method to compute area (member function)
+    double area() {
+        return length * width;
+    }
+};
+
+int main() {
+    // Create an object of the Rectangle class
+    Rectangle myRectangle(10.0, 5.0);
+
+    // Call the area method and print the result
+    cout << "Area of the rectangle: " << myRectangle.area() << endl;
+
+    return 0;
+}
